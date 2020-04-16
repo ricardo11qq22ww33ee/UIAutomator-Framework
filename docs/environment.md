@@ -1,19 +1,21 @@
 # Environment
 
-This is the environment that was used in the scripts.
+Este documento contiene el ambiente donde se ejecutaran los scripts
 
-## Phone information
+## Dispositivo Movil
 
-**Brand :** Motorola
+**Marca :** Motorola
 
-**Model :** Moto G6
+**Modelo :** Moto G6
 
-**RAM Size:** 3.00 GB
+**RAM :** 3.00 GB
 
-**Serial Number:** ZY323XP43F
+**Serial :** ZY323XP43F
 
 **Mobile Carrier:** Movistar
 
-**Country:** Mexico
+**Pais:** Mexico
 
 **Android Version:** Android 9
+
+**Idioma del Telefono:** Ingles

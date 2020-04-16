@@ -1,28 +1,25 @@
-# Setup requirements
+# Requisitos del Setup
 
-These are the requirements for running this project.
+Estos son los prerequisitos para poder ejecutar el proyecto:
 
   * Python 2.7
   * Pip package installer
   * Android Debug Bridge (ADB)
   * Android SDK Tools
 
-### Preparation
+### Preparacion
 
-Before running the project, be sure to open a terminal in the root of the project and 
-run 
+Para instalar todas las dependencias, abrir una consola o terminal en el ***root***
+del proyecto, y insertar este comando:
 
 `pip install -r requirements.txt`
-
-to install the required python modules.
 
 
 ### Last touches
 
-To ensure that the Android Tools are working, plugin the phone, enable
-USB debugging and in a terminal run `adb devices`.
+Para comprobar que el ADB esta instalado correctamente, conectar el telefono en modo debug,  abrir una terminal donde
+ se desee y ejecutar el comando: `adb devices`.
 
-If the setup is correct, it will show the connected phone with it's serial.
-
-Finally, make sure that the phone does not have any Lock-screens enabled.
+Si el setup fue correcto, se mostrara una lista con los dispositivos moviles
+conectados al equipo.
 

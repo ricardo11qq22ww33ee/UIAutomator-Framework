@@ -15,7 +15,7 @@ del proyecto, y insertar este comando:
 `pip install -r requirements.txt`
 
 
-### Last touches
+### Ultimos detalles
 
 Para comprobar que el ADB esta instalado correctamente, conectar el telefono en modo debug,  abrir una terminal donde
  se desee y ejecutar el comando: `adb devices`.

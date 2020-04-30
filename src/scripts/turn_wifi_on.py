@@ -8,36 +8,41 @@
 import time
 from src.lib.phone_control import PhoneControl
 from src.lib.logger import Logger
+import src.lib.utils as utils
 
 
-def run(filename, path):
+def run(device_version, filename="log_wifi.txt", path="../../qa/reports/"):
+    # instantiate logger to save a report file
     logger = Logger(filename, path)
+    # initiate connection to device(s)
+    controller = PhoneControl()
+    # use the parameters for specific version
+    device_params = utils.read_json(device_version)
+    # read the serials
+    serials = controller.read_serials()
+    for i in range(len(serials)):
+        logger.write_log(" Device {} = {}".format(i+1, serials))
 
-    controller = PhoneControl(3)
+        controller.init_device(serials[i])
 
-    serial = controller.read_serial()
-    logger.write_log("1st Device on List = {}".format(serial))
-
-    controller.init_device()
-
-    logger.write_log("Script Turn Wifi On---------")
-    try:
-        action(logger, controller)
-        time.sleep(3)
-    except Exception as ex:
-        logger.error_log(ex.message)
+        logger.write_log("Script Turn Wifi On---------")
+        try:
+            action(logger, controller, device_params)
+            time.sleep(3)
+        except Exception as ex:
+            logger.error_log(ex.message)
 
 
-def action(logger, controller):
+def action(logger, controller, params):
     controller.unlock_phone()
     controller.click_home()
-    controller.click_button('Settings')
-    controller.click_button('Network & internet')
-    controller.click_button('Wi‑Fi')
-    if controller.button_exists('OFF', 'android.widget.Switch'):
+    controller.click_button(params['settings']['text'], params['settings']['className'])
+    controller.click_button(params['network']['text'], params['network']['className'])
+    controller.click_button(params['wi-fi']['text'], params['wi-fi']['className'])
+    if controller.button_exists('OFF', params['switch_className']):
         logger.write_log("Status: Wifi Off")
-        controller.switch_button('OFF')
-        if controller.button_exists('ON', 'android.widget.Switch'):
+        controller.click_button('OFF', params['switch_className'])
+        if controller.button_exists('ON', params['switch_className']):
             logger.write_log("WIFI TURNED ON")
     else:
         logger.write_log("WIFI ALREADY ON")
@@ -46,5 +51,5 @@ def action(logger, controller):
 
 
 if __name__ == "__main__":
-    run("log_wifi.txt", "../../qa/reports/")
+    run(device_version="android9")
 

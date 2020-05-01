@@ -58,6 +58,6 @@ class PhoneControl:
     def longclick_detailed_button(self, classname, packagename, description):
         self.device(packageName=packagename, className=classname, description=description).long_click()
 
-    def set_text_textfield(self, packagename, classname,  content):
+    def set_text_textfield(self,  classname, packagename, content):
         self.device(packageName=packagename, className=classname).set_text(content)
 

@@ -4,14 +4,11 @@ import os.path
 
 
 def run_framework():
-    my_path = os.path.dirname(os.path.abspath(__file__))
-    path = os.path.join(my_path, "qa", "reports", '')
-
     # here all the suites specified will be ran, to execute all test cases
     # Wifi Suite
-    WifiSuite.run_suite("log_wifi.txt", path)
+    WifiSuite.run_suite(device_version="android9")
     # Dialer Suite
-    DialerSuite.run_suite("log_dialer.txt", path)
+    DialerSuite.run_suite(device_version="android9")
 
 
 if __name__ == "__main__":

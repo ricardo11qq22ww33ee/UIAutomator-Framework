@@ -2,17 +2,17 @@ import src.scripts.turn_wifi_on as WifiOn
 import src.scripts.turn_wifi_off as WifiOff
 
 
-def run_suite(filename, path):
+def run_suite(device_version="android9"):
     # here all the test cases are specified
     # TC-003
-    WifiOff.run(filename, path)
+    WifiOff.run(device_version)
     # TC-004
-    WifiOff.run(filename, path)
+    WifiOff.run(device_version)
     # TC-001
-    WifiOn.run(filename, path)
+    WifiOn.run(device_version)
     # TC-002
-    WifiOn.run(filename, path)
+    WifiOn.run(device_version)
 
 
 if __name__ == "__main__":
-    run_suite("log_wifi.txt", "../../qa/reports/")
+    run_suite()

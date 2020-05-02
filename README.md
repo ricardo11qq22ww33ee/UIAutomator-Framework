@@ -1,29 +1,50 @@
+# Requisitos del Setup
+
+Estos son los prerequisitos para poder ejecutar el proyecto:
+
+  * Python 2.7
+  * Pip package installer
+  * Android Debug Bridge (ADB)
+  * Android SDK Tools
+
+### Preparacion
+
+Para instalar todas las dependencias, abrir una consola o terminal en el ***root***
+del proyecto, y insertar este comando:
+
+`pip install -r requirements.txt`
+
+
+### Ultimos detalles
+
+Para comprobar que el ADB esta instalado correctamente, conectar el telefono en modo debug,  abrir una terminal donde
+ se desee y ejecutar el comando: `adb devices`.
+
+Si el setup fue correcto, se mostrara una lista con los dispositivos moviles
+conectados al equipo.
+
+
+
 # Ejecucion de los scripts
 
-Este documento indica como se deben ejecutar los scripts.
-
-Antes de comenzar, se requiere que todos los pasos del documento de docs/SETUP.MD hayan sido cumplidos.
-
-Tambien es necesario abrir una consola o terminal en el ***root*** del proyecto.
+Despues de habeer cumplido todos los requisitos del setup, abrir una consola o terminal en el ***root*** del proyecto:
 
 ### Seleccionar las test suites a ejecutar
 
 Para seleccionar que test suites ejecutar, se debe modificar el archivo **main.py**.
 
-```import src.suites.dialer as DialerSuite
-import src.suites.wifi as WifiSuite
-
-
+```
 def run_framework():
     # here all the suites specified will be ran, to execute all test cases
     # Wifi Suite
-    WifiSuite.run_suite("log_wifi.txt", "../../qa/reports/")
+    WifiSuite.run_suite(device_version="android9")
     # Dialer Suite
-    DialerSuite.run_suite("log_dialer.txt", "../../qa/reports/")
+    DialerSuite.run_suite(device_version="android9")
 
 
 if __name__ == "__main__":
     run_framework()
+
 ```
 
 

@@ -1,0 +1,34 @@
+{ "button_className":"android.widget.TextView",
+  "switch_className":"android.widget.Switch",
+  "textField_className":"android.widget.EditText",
+  "textField_packageName":"com.google.android.dialer",
+  "digit_className": "android.widget.TextView",
+  "phone":  { "text": "Phone",
+              "className": "android.widget.TextView"
+            },
+  "settings":  { "text": "Settings",
+              "className": "android.widget.TextView"
+            },
+  "network":  { "text": "Network & internet",
+              "className": "android.widget.TextView"
+            },
+  "wi-fi":  { "text": "Wi‑Fi",
+              "className": "android.widget.TextView"
+            },
+  "key-pad":  { "description": "key pad",
+              "className": "android.widget.ImageButton",
+              "packageName": "com.google.android.dialer"
+            },
+  "backspace":  { "description": "backspace",
+              "className": "android.widget.ImageButton",
+              "packageName": "com.google.android.dialer"
+            },
+  "dial":  { "description": "dial",
+                "className": "android.widget.ImageButton",
+                "packageName": "com.google.android.dialer"
+              },
+  "hang":  { "description": "End Call",
+                "className": "android.widget.ImageButton",
+                "packageName": "com.google.android.dialer"
+              }
+}

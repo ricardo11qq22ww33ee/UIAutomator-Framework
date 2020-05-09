@@ -1,17 +1,16 @@
-import src.scripts.turn_wifi_on as WifiOn
-import src.scripts.turn_wifi_off as WifiOff
+import src.scripts.turn_wifi as TurnWifi
 
 
-def run_suite(device_version="android9"):
+def run_suite():
     # here all the test cases are specified
     # TC-003
-    WifiOff.run(device_version)
+    TurnWifi.run("OFF")
     # TC-004
-    WifiOff.run(device_version)
+    TurnWifi.run("OFF")
     # TC-001
-    WifiOn.run(device_version)
+    TurnWifi.run("ON")
     # TC-002
-    WifiOn.run(device_version)
+    TurnWifi.run("ON")
 
 
 if __name__ == "__main__":

@@ -3,6 +3,7 @@ import phonenumbers
 import json
 
 
+
 def validate_number(number):
     # check for emergency number
     if number == "911":
@@ -23,6 +24,16 @@ def validate_number(number):
 
 
 def read_json(name):
-    with open("src/devices/"+name+".json") as json_file:
+
+    with open("../devices/"+name+".json", 'r') as json_file:
         data = json.load(json_file)
     return data
+
+
+def get_device_data(versionnumber):
+    devices = read_json("device_compatibility")
+    if versionnumber in devices:
+        device_version = devices[versionnumber]
+        return read_json(device_version)
+    else:
+        raise ValueError('Not compatible with your device. (have you added your device to src/devices/device_compatibility.json ?)')

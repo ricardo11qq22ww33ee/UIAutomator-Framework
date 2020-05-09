@@ -1,6 +1,7 @@
 # coding=utf-8
 from subprocess import check_call, check_output
 import time
+
 from uiautomator import Device
 
 
@@ -26,6 +27,7 @@ class PhoneControl:
     def unlock_phone(self):
         check_call(['adb', '-s', self.serial, 'shell', 'input keyevent', 'KEYCODE_WAKEUP'])
         time.sleep(self.time)
+
 
     def click_home(self):
         check_call(['adb', '-s', self.serial, 'shell', 'input keyevent', 'KEYCODE_HOME'])
@@ -60,4 +62,12 @@ class PhoneControl:
 
     def set_text_textfield(self,  classname, packagename, content):
         self.device(packageName=packagename, className=classname).set_text(content)
+
+    def version(self):
+        output = check_output(['adb', '-s',  self.serial, 'shell', 'getprop', 'ro.build.version.release'])
+        ver = ""
+        for c in output:
+            if c.isalnum():
+                ver += c
+        return ver
 

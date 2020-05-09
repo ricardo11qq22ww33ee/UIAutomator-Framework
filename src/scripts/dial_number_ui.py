@@ -4,7 +4,6 @@
 """
 
 """
-from subprocess import check_call, check_output
 import time
 from src.lib.phone_control import PhoneControl
 from src.lib.logger import Logger
@@ -17,14 +16,13 @@ def run(device_version, number=None, filename="log_dialer.txt", path="qa/reports
 
     controller = PhoneControl()
 
-    device_params = utils.read_json(device_version)
-
     serials = controller.read_serials()
 
     for i in range(len(serials)):
         logger.write_log(" Device {} = {}".format(i + 1, serials))
 
         controller.init_device(serials[i])
+        device_params = utils.get_device_data(controller.version())
 
         logger.write_log("Script Dial Number UI---------")
         if number is None:

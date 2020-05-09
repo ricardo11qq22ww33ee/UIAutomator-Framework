@@ -4,27 +4,24 @@
 """
 
 """
-from subprocess import check_call, check_output
 import time
 from src.lib.phone_control import PhoneControl
 from src.lib.logger import Logger
 import src.lib.utils as utils
 
 
-def run(device_version, number=None, filename="log_dialer.txt", path="qa/reports/"):
+def run(number=None, filename="log_dialer.txt", path="../../qa/reports/"):
 
     logger = Logger(filename, path)
 
     controller = PhoneControl()
-
-    device_params = utils.read_json(device_version)
 
     serials = controller.read_serials()
     for i in range(len(serials)):
         logger.write_log(" Device {} = {}".format(i + 1, serials))
 
         controller.init_device(serials[i])
-
+        device_params = utils.get_device_data(controller.version())
         logger.write_log("Script Dial Number---------")
         if number is None:
             n = raw_input("Enter the number to dial : ")
@@ -45,7 +42,7 @@ def action(logger, controller, number, params):
     controller.unlock_phone()
     controller.click_home()
     controller.click_detailed_button(params["phone"]["className"], params["phone"]["packageName"], params["phone"]["description"])
-    controller.click__button(params['phone']['text'], params['phone']['className'])
+    controller.click_button(params['phone']['text'], params['phone']['className'])
     if controller.detailed_button_exists(params['key-pad']['className'], params['key-pad']['packageName'], params['key-pad']['description']):
         controller.click_detailed_button(params['key-pad']['className'], params['key-pad']['packageName'], params['key-pad']['description'])
     controller.longclick_detailed_button(params['backspace']['className'], params['backspace']['packageName'], params['backspace']['description'])
@@ -64,5 +61,4 @@ def action(logger, controller, number, params):
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-
-    run(device_version="android9")
+    run()

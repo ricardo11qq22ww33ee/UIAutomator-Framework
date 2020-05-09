@@ -24,6 +24,20 @@ Si el setup fue correcto, se mostrara una lista con los dispositivos moviles
 conectados al equipo.
 
 
+### Compatibilidad del dispositivo
+
+Para que el framework funcione con su dispositivo, debe asegurarse que su version este implementada.
+
+Para verificar esto:
+ 
+ 1. Ejecutar en una terminal ``adb devices``
+ 2. Copiar el serial perteneciente a su dispositivo.
+ 3. Ejecutar en la terminal ``adb -s <SERIAL> shell getprop ro.build.version.release``. Esto regresara su version de Android.
+ 4. Ir a la carpeta src/devices. En el archivo device_compatibility.json, si su version se encuentra ahi, quiere decir que es compatible.
+ 
+ Versiones compatibles actualmente: 9
+
+
 
 # Ejecucion de los scripts
 

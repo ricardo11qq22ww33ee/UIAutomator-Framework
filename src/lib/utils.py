@@ -24,6 +24,7 @@ def validate_number(number):
 
 
 def read_json(name):
+
     with open("../devices/"+name+".json", 'r') as json_file:
         data = json.load(json_file)
     return data

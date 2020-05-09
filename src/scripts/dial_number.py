@@ -41,6 +41,7 @@ def run(number=None, filename="log_dialer.txt", path="../../qa/reports/"):
 def action(logger, controller, number, params):
     controller.unlock_phone()
     controller.click_home()
+    controller.click_detailed_button(params["phone"]["className"], params["phone"]["packageName"], params["phone"]["description"])
     controller.click_button(params['phone']['text'], params['phone']['className'])
     if controller.detailed_button_exists(params['key-pad']['className'], params['key-pad']['packageName'], params['key-pad']['description']):
         controller.click_detailed_button(params['key-pad']['className'], params['key-pad']['packageName'], params['key-pad']['description'])

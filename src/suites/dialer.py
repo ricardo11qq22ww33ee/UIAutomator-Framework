@@ -2,25 +2,25 @@ import src.scripts.dial_number as DialNumber
 import src.scripts.dial_number_ui as DialNumberUI
 
 
-def run_suite(device_version="android9"):
+def run_suite():
     # here all the test cases are specified
     # you can run specific scripts if ypu want to input manual numbers
     # TC-005
-    DialNumber.run(device_version, "4493019556")
+    DialNumber.run("4493019556")
     # TC-006
-    DialNumber.run(device_version, "asd6c9asd")
+    DialNumber.run("asd6c9asd")
     # TC-007
-    DialNumber.run(device_version, "+59122794948")
+    DialNumber.run("+59122794948")
     # TC-008
-    DialNumber.run(device_version, "911")
+    DialNumber.run("911")
     # TC-009
-    DialNumberUI.run(device_version, "4493019556")
+    DialNumberUI.run("4493019556")
     # TC-010
-    DialNumberUI.run(device_version, "4kj234hj1")
+    DialNumberUI.run("4kj234hj1")
     # TC-011
-    DialNumberUI.run(device_version, "+59177236019")
+    DialNumberUI.run("+59177236019")
     # TC-012
-    DialNumberUI.run(device_version, "911")
+    DialNumberUI.run("911")
 
 
 if __name__ == "__main__":

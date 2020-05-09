@@ -6,9 +6,9 @@ import os.path
 def run_framework():
     # here all the suites specified will be ran, to execute all test cases
     # Wifi Suite
-    WifiSuite.run_suite(device_version="android9")
+    WifiSuite.run_suite()
     # Dialer Suite
-    DialerSuite.run_suite(device_version="android9")
+    DialerSuite.run_suite()
 
 
 if __name__ == "__main__":

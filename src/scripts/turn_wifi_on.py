@@ -11,7 +11,7 @@ from src.lib.logger import Logger
 import src.lib.utils as utils
 
 
-def run(device_version, filename="log_wifi.txt", path="../../qa/reports/"):
+def run(device_version, filename="log_wifi.txt", path="qa/reports/"):
     # instantiate logger to save a report file
     logger = Logger(filename, path)
     # initiate connection to device(s)

@@ -11,7 +11,7 @@ from src.lib.logger import Logger
 import src.lib.utils as utils
 
 
-def run(device_version, number=None, filename="log_dialer.txt", path="../../qa/reports/"):
+def run(device_version, number=None, filename="log_dialer.txt", path="qa/reports/"):
 
     logger = Logger(filename, path)
 
@@ -44,7 +44,8 @@ def run(device_version, number=None, filename="log_dialer.txt", path="../../qa/r
 def action(logger, controller, number, params):
     controller.unlock_phone()
     controller.click_home()
-    controller.click_button(params['phone']['text'], params['phone']['className'])
+    controller.click_detailed_button(params["phone"]["className"], params["phone"]["packageName"], params["phone"]["description"])
+    controller.click__button(params['phone']['text'], params['phone']['className'])
     if controller.detailed_button_exists(params['key-pad']['className'], params['key-pad']['packageName'], params['key-pad']['description']):
         controller.click_detailed_button(params['key-pad']['className'], params['key-pad']['packageName'], params['key-pad']['description'])
     controller.longclick_detailed_button(params['backspace']['className'], params['backspace']['packageName'], params['backspace']['description'])

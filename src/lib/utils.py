@@ -1,7 +1,7 @@
 # coding=utf-8
 import phonenumbers
 import json
-
+import os
 
 
 def validate_number(number):
@@ -24,8 +24,9 @@ def validate_number(number):
 
 
 def read_json(name):
-
-    with open("../devices/"+name+".json", 'r') as json_file:
+    path = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.join(path, "..", "devices", "", name+".json")
+    with open(path, 'r') as json_file:
         data = json.load(json_file)
     return data
 
@@ -36,4 +37,4 @@ def get_device_data(versionnumber):
         device_version = devices[versionnumber]
         return read_json(device_version)
     else:
-        raise ValueError('Not compatible with your device. (have you added your device to src/devices/device_compatibility.json ?)')
+        raise KeyError('Not compatible with your device. (have you added your device to src/devices/device_compatibility.json ?)')

@@ -8,10 +8,13 @@ import time
 from src.lib.phone_control import PhoneControl
 from src.lib.logger import Logger
 import src.lib.utils as utils
+import os
 
 
-def run(device_version, number=None, filename="log_dialer.txt", path="qa/reports/"):
-
+def run(number=None, filename="log_dialer.txt"):
+    # path to save logs
+    path = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.join(path, "..", "..", "qa", "reports", "")
     logger = Logger(filename, path)
 
     controller = PhoneControl()
@@ -74,5 +77,4 @@ def action(logger, controller, number, params):
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-
-    run(device_version="android9")
+    run()

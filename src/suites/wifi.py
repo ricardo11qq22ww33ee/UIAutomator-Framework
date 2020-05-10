@@ -1,4 +1,5 @@
 import src.scripts.turn_wifi as TurnWifi
+import os
 
 
 def run_suite():

@@ -9,9 +9,13 @@ import time
 from src.lib.phone_control import PhoneControl
 from src.lib.logger import Logger
 import src.lib.utils as utils
+import os
 
 
-def run(turn, filename="log_wifi.txt", path="../../qa/reports/"):
+def run(turn, filename="log_wifi.txt"):
+    # path to save logs
+    path = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.join(path, "..", "..", "qa", "reports", "")
     # instantiate logger to save a report file
     logger = Logger(filename, path)
     # initiate connection to device(s)

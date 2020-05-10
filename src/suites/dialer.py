@@ -4,7 +4,7 @@ import src.scripts.dial_number_ui as DialNumberUI
 
 def run_suite():
     # here all the test cases are specified
-    # you can run specific scripts if ypu want to input manual numbers
+    # you can run specific scripts if you want to input manual numbers
     # TC-005
     DialNumber.run("4493019556")
     # TC-006

@@ -1,5 +1,6 @@
 import src.suites.dialer as DialerSuite
 import src.suites.wifi as WifiSuite
+import src.suites.calculatorapp as CalculatorSuite
 import os.path
 
 
@@ -9,6 +10,8 @@ def run_framework():
     WifiSuite.run_suite()
     # Dialer Suite
     DialerSuite.run_suite()
+    # Calculator Suite
+    CalculatorSuite.run_suite()
 
 
 if __name__ == "__main__":

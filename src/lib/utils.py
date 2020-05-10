@@ -31,10 +31,10 @@ def read_json(name):
     return data
 
 
-def get_device_data(versionnumber):
+def get_device_data(serialnumber):
     devices = read_json("device_compatibility")
-    if versionnumber in devices:
-        device_version = devices[versionnumber]
+    if serialnumber in devices:
+        device_version = devices[serialnumber]
         return read_json(device_version)
     else:
-        raise KeyError('Not compatible with your device. (have you added your device to src/devices/device_compatibility.json ?)')
+        raise KeyError('Not compatible with your device. (have you added your device serial to src/devices/device_compatibility.json ?)')

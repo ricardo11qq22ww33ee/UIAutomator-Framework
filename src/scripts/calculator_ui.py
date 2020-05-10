@@ -24,7 +24,7 @@ def run(a, op, b, filename="log_calculator.txt"):
         logger.write_log(" Device {} = {}".format(i + 1, serials))
 
         controller.init_device(serials[i])
-        device_params = utils.get_device_data(controller.version())
+        device_params = utils.get_device_data(serials[i])
         logger.write_log("Script UI Calculator---------")
 
         try:

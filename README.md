@@ -32,10 +32,10 @@ Para verificar esto:
  
  1. Ejecutar en una terminal ``adb devices``
  2. Copiar el serial perteneciente a su dispositivo.
- 3. Ejecutar en la terminal ``adb -s <SERIAL> shell getprop ro.build.version.release``. Esto regresara su version de Android.
- 4. Ir a la carpeta src/devices. En el archivo device_compatibility.json, si su version se encuentra ahi, quiere decir que es compatible.
+ 3. Ir a la carpeta src/devices. En el archivo device_compatibility.json, agregar su serial especificando el nombre de
+    la version a la que pertenece su telefono. Si no existe ninguna, la framework no es compatible.
  
- Versiones compatibles actualmente: 9
+ Versiones compatibles actualmente: android9, huaweiY9
 
 
 

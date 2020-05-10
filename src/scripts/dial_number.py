@@ -24,7 +24,7 @@ def run(number=None, filename="log_dialer.txt"):
         logger.write_log(" Device {} = {}".format(i + 1, serials))
 
         controller.init_device(serials[i])
-        device_params = utils.get_device_data(controller.version())
+        device_params = utils.get_device_data(serials[i])
         logger.write_log("Script Dial Number---------")
         if number is None:
             n = raw_input("Enter the number to dial : ")

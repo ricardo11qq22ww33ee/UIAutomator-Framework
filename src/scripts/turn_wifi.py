@@ -27,7 +27,7 @@ def run(turn, filename="log_wifi.txt"):
         # init device with serial
         controller.init_device(serials[i])
         # get the device parameters from the device version dictionary
-        device_params = utils.get_device_data(controller.version())
+        device_params = utils.get_device_data(serials[i])
         logger.write_log("Script Turn Wifi " + turn + " ---------")
         try:
             action(turn, logger, controller, device_params)

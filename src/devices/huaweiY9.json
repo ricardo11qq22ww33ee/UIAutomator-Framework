@@ -71,5 +71,16 @@
   "connection":  { "className": "android.widget.TextView",
               "packageName": "com.android.settings",
               "resourceId": "android:id/summary"
-            }
+            },
+  "calculator_clear": { "packageName": "com.android.calculator2",
+                  "className": "android.widget.ImageView",
+                  "description": "clear"
+  },
+  "calculator_delete": { "packageName": "com.android.calculator2",
+                  "className": "android.widget.ImageView",
+                  "description": "delete"
+  },
+  "calculator_textfield": { "packageName": "com.android.calculator2",
+                  "className": "android.widget.EditText"
+  }
 }

@@ -23,11 +23,11 @@ class Calculator:
         if op == '+':
             return self.addition(a, b, digits), '+'
         elif op == '-' or op == '−':
-            return self.subtraction(a, b, digits), '−'
+            return self.subtraction(a, b, digits), '-'
         elif op == 'x' or op == '*' or op == '×':
-            return self.multiplication(a, b, digits), '×'
+            return self.multiplication(a, b, digits), 'x'
         elif op == '/' or op == '÷':
-            return self.division(a, b, digits), '÷'
+            return self.division(a, b, digits), '/'
         else:
             raise SyntaxError("Unsupported Operation")
 

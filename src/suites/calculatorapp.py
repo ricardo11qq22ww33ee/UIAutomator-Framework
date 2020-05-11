@@ -1,4 +1,4 @@
-import src.scripts.calculator_ui2 as Calculator
+import src.scripts.calculator_ui as Calculator
 import os
 
 
@@ -14,6 +14,8 @@ def run_suite():
             array = line.split()
             if len(array) == 3:
                 # call the script
+                if array[0][0] == "#":
+                    continue
                 Calculator.run(array[0], array[1], array[2])
             else:
                 continue

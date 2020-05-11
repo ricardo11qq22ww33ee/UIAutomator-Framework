@@ -56,7 +56,7 @@ class PhoneControl:
             value = self.device(className=classname, packageName=packagename).info
             value = json.dumps(value)
             value = json.loads(value)
-            return value["text"]
+            return float(value["text"])
         else:
             return False
 

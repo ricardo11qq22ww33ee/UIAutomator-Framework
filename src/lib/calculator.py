@@ -23,7 +23,7 @@ class Calculator:
             return self.addition(a, b)
         elif op == '-':
             return self.subtraction(a, b)
-        elif op == '*':
+        elif op == 'x':
             return self.multiplication(a, b)
         elif op == '/':
             return self.division(a, b)

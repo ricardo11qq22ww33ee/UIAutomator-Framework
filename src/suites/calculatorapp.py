@@ -1,4 +1,4 @@
-import src.scripts.calculator_ui as Calculator
+import src.scripts.calculator_ui2 as Calculator
 import os
 
 

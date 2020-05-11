@@ -10,8 +10,8 @@ class Calculator:
         self.number1 = 0.0
         self.number2 = 0.0
         self.operator = ""
-        a = a.replace(',','')
-        b = b.replace(',','')
+        a = a.replace(',', '')
+        b = b.replace(',', '')
         if self.validate_digits(a) and self.validate_digits(b):
             self.res, self.operator = self.calculate(a, b, op)
             self.valid = True
@@ -96,5 +96,6 @@ class Calculator:
             self.res = 0
         result = result.encode('ascii', 'replace')
         result = result.replace('?', '-')
+        result = result.replace(',', '')
         result = Decimal(result)
         return utils.isclose(float(result), float(self.res))

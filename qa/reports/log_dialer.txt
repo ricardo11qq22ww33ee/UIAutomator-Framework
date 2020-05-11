@@ -301,3 +301,23 @@ test start:  "05-11-20 14:42:35.999000"
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number UI---------
 National number 4491963704
+test start:  "05-11-20 15:15:52.881000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+National number 4491963704
+test start:  "05-11-20 15:27:18.680000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+National number 4491963704
+-------------ERROR  ------------------------------------------- 
+Test Failed 
+android.support.test.uiautomator.UiObjectNotFoundException: UiSelector[CLASS=android.widget.TextView, DESCRIPTION=Phone, PACKAGE NAME=com.huawei.android.launcher]
+test start:  "05-11-20 15:27:18.680000"
+test end  :  "05-11-20 15:27:44.859000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-11-20 15:27:44.860000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+National number 5590458901

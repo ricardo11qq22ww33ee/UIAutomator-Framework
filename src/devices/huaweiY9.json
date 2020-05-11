@@ -35,9 +35,9 @@
                 "packageName": "com.android.contacts",
               "className": "android.widget.ImageButton"
               },
-  "hang":  { "description": "End Call",
+  "hang":  { "description": "End",
                 "className": "android.widget.ImageButton",
-                "packageName": "com.google.android.dialer"
+                "packageName": "com.android.incallui"
               },
   "ON":  { "className": "android.widget.Switch",
               "packageName": "com.android.settings",

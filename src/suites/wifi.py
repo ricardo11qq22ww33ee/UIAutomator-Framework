@@ -5,12 +5,9 @@ import os
 def run_suite():
     # here all the test cases are specified
     # TC-003
-    TurnWifi.run("OFF")
+    TurnWifi.run("ON")
     # TC-004
     TurnWifi.run("OFF")
-    # TC-001
-    TurnWifi.run("ON")
-    # TC-002
     TurnWifi.run("ON")
 
 

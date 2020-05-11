@@ -46,7 +46,7 @@ def run(number=None, filename="log_dialer.txt"):
 def action(logger, controller, number, params):
     controller.unlock_phone()
     controller.click_home()
-    controller.click_button(params['phone']['text'], params['phone']['className'])
+    controller.click_detailed_button(params["phone"]["className"], params["phone"]["packageName"], params["phone"]["description"])
     if controller.detailed_button_exists(params['key-pad']['className'], params['key-pad']['packageName'],
                                          params['key-pad']['description']):
         controller.click_detailed_button(params['key-pad']['className'], params['key-pad']['packageName'],
@@ -57,7 +57,7 @@ def action(logger, controller, number, params):
         if digit.isdigit():
             controller.click_button(digit, params['digit_className'])
         elif digit == "+":
-            controller.longclick_button(digit, params['digit_className'])
+            controller.longclick_button("0", params['digit_className'])
         else:
             logger.error_log("Dialing Error")
             return

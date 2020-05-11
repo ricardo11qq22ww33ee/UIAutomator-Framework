@@ -47,26 +47,28 @@ def action(logger, controller, calculator, params):
     # calculator has non processed input
     if controller.detailed_button_exists(params['calculator_delete']['className'], params['calculator_delete']['packageName'], params['calculator_delete']['description']):
         controller.longclick_detailed_button(params['calculator_delete']['className'],
-                                        params['calculator_delete']['packageName'], params['calculator_delete']['description'])
+                                             params['calculator_delete']['packageName'], params['calculator_delete']['description'])
         controller.clear_text_textfield(params['calculator_delete']['className'],
                                         params['calculator_delete']['packageName'])
-    # insert values
-    for digit in str(calculator.number1):
-        if digit == '-':
-            digit = '−'
-        controller.click_button(digit, params['calculator_button']['className'])
+    for i in calculator.number1:
+        if i == "-":
+            controller.click_detailed_button(params["-"]["className"], params["-"]["packageName"],
+                                             params["-"]["description"])
+        else:
+            controller.click_button(i, params['digit_calculator'])
 
-    # operator
-    controller.click_button(calculator.operator, params['calculator_button']['className'])
-    for digit in str(calculator.number2):
-        if digit == '-':
-            digit = '−'
-            if calculator.operator == digit:
-                logger.write_log("Warning: operator is substracion and second number is negative. The second number will be positive in the calculator.")
-        controller.click_button(digit, params['calculator_button']['className'])
-    # '=' button
-    controller.click_button('=', params['calculator_button']['className'])
-    result = controller.get_text_textfield(params['calculator_textfield']['className'], params['calculator_textfield']['packageName'])
+    controller.click_detailed_button(params[calculator.operator]["className"], params[calculator.operator]["packageName"],
+                                     params[calculator.operator]["description"])
+    for i in calculator.number2:
+        if i == "-":
+            controller.click_detailed_button(params["-"]["className"], params["-"]["packageName"],
+                                             params["-"]["description"])
+        else:
+            controller.click_button(i, params['digit_calculator'])
+    controller.click_detailed_button(params["="]["className"], params["="]["packageName"], params["="]["description"])
+    result = controller.get_text_textfield(params["calculator_textfield"]["className"],
+                                           params["calculator_textfield"]["packageName"])
+
     # validate result
     if calculator.validate_result(result):
         logger.write_log("VALID RESULT: " + str(calculator.res))

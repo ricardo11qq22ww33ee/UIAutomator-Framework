@@ -1,0 +1,565 @@
+test start:  "05-09-20 15:01:29.707000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+National number 4493019556
+-------------ERROR  ------------------------------------------- 
+android.support.test.uiautomator.UiObjectNotFoundException: UiSelector[TEXT=Phone, CLASS=android.widget.TextView]
+test start:  "05-09-20 15:01:29.707000"
+test end  :  "05-09-20 15:02:01.410000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-09-20 15:02:01.412000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-09-20 15:02:01.412000"
+test end  :  "05-09-20 15:02:01.556000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-09-20 15:02:01.558000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+International number +59122794948
+-------------ERROR  ------------------------------------------- 
+android.support.test.uiautomator.UiObjectNotFoundException: UiSelector[TEXT=Phone, CLASS=android.widget.TextView]
+test start:  "05-09-20 15:02:01.558000"
+test end  :  "05-09-20 15:02:32.643000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-09-20 15:02:32.645000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+Emergency number 911
+test start:  "05-09-20 15:23:36.978000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+National number 4493019556
+-------------ERROR  ------------------------------------------- 
+PhoneControl instance has no attribute 'click__button'
+test start:  "05-09-20 15:23:36.978000"
+test end  :  "05-09-20 15:24:02.807000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-09-20 15:24:02.809000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-09-20 15:24:02.809000"
+test end  :  "05-09-20 15:24:03.006000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-09-20 15:24:03.007000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+International number +59122794948
+-------------ERROR  ------------------------------------------- 
+PhoneControl instance has no attribute 'click__button'
+test start:  "05-09-20 15:24:03.007000"
+test end  :  "05-09-20 15:24:14.626000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-09-20 15:24:14.628000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+Emergency number 911
+-------------ERROR  ------------------------------------------- 
+PhoneControl instance has no attribute 'click__button'
+test start:  "05-09-20 15:24:14.628000"
+test end  :  "05-09-20 15:24:26.273000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-09-20 15:24:26.275000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+National number 4493019556
+-------------ERROR  ------------------------------------------- 
+android.support.test.uiautomator.UiObjectNotFoundException: UiSelector[TEXT=Phone, CLASS=android.widget.TextView]
+test start:  "05-09-20 15:24:26.275000"
+test end  :  "05-09-20 15:24:57.435000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-09-20 15:24:57.441000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-09-20 15:24:57.441000"
+test end  :  "05-09-20 15:24:57.673000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-09-20 15:24:57.676000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+International number +59177236019
+-------------ERROR  ------------------------------------------- 
+android.support.test.uiautomator.UiObjectNotFoundException: UiSelector[TEXT=Phone, CLASS=android.widget.TextView]
+test start:  "05-09-20 15:24:57.676000"
+test end  :  "05-09-20 15:25:28.770000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-09-20 15:25:28.773000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+Emergency number 911
+-------------ERROR  ------------------------------------------- 
+android.support.test.uiautomator.UiObjectNotFoundException: UiSelector[TEXT=Phone, CLASS=android.widget.TextView]
+test start:  "05-09-20 15:25:28.773000"
+test end  :  "05-09-20 15:26:00.422000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 00:05:02.527000" 
+ Device 1 = ['ZY323XP43F']
+Script Dial Number---------
+National number 4493019556
+-------------ERROR  ------------------------------------------- 
+packageName
+test start:  "05-10-20 00:05:02.527000"
+test end  :  "05-10-20 00:05:10.220000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 00:05:10.220000" 
+ Device 1 = ['ZY323XP43F']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-10-20 00:05:10.220000"
+test end  :  "05-10-20 00:05:10.379000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 00:05:10.380000" 
+ Device 1 = ['ZY323XP43F']
+Script Dial Number---------
+International number +59122794948
+-------------ERROR  ------------------------------------------- 
+packageName
+test start:  "05-10-20 00:05:10.380000"
+test end  :  "05-10-20 00:05:17.998000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 00:05:17.998000" 
+ Device 1 = ['ZY323XP43F']
+Script Dial Number---------
+Emergency number 911
+-------------ERROR  ------------------------------------------- 
+packageName
+test start:  "05-10-20 00:05:17.998000"
+test end  :  "05-10-20 00:05:25.675000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 00:05:25.676000" 
+ Device 1 = ['ZY323XP43F']
+Script Dial Number UI---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-10-20 00:05:25.676000"
+test end  :  "05-10-20 00:13:22.874000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 00:13:22.874000" 
+ Device 1 = ['ZY323XP43F']
+Script Dial Number UI---------
+test start:  "05-10-20 00:15:24.485000" 
+ Device 1 = ['ZY323XP43F']
+Script Dial Number UI---------
+National number 4493019556
+test start:  "05-10-20 17:53:52.776000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+National number 4493019556
+-------------ERROR  ------------------------------------------- 
+
+test start:  "05-10-20 17:53:52.776000"
+test end  :  "05-10-20 17:53:53.904000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 17:53:53.905000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-10-20 17:53:53.905000"
+test end  :  "05-10-20 17:53:54.998000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 17:53:54.999000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+International number +59122794948
+-------------ERROR  ------------------------------------------- 
+
+test start:  "05-10-20 17:53:54.999000"
+test end  :  "05-10-20 17:53:56.134000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 17:53:56.135000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+Emergency number 911
+-------------ERROR  ------------------------------------------- 
+
+test start:  "05-10-20 17:53:56.135000"
+test end  :  "05-10-20 17:53:57.254000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 17:53:57.255000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+National number 4493019556
+-------------ERROR  ------------------------------------------- 
+
+test start:  "05-10-20 17:53:57.255000"
+test end  :  "05-10-20 17:53:58.378000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 17:53:58.379000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-10-20 17:53:58.379000"
+test end  :  "05-10-20 17:54:00.480000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 17:54:00.481000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+International number +59177236019
+-------------ERROR  ------------------------------------------- 
+
+test start:  "05-10-20 17:54:00.481000"
+test end  :  "05-10-20 17:54:01.595000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 17:54:01.596000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+Emergency number 911
+-------------ERROR  ------------------------------------------- 
+
+test start:  "05-10-20 17:54:01.596000"
+test end  :  "05-10-20 17:54:02.713000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 18:47:34.552000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+National number 4493019556
+-------------ERROR  ------------------------------------------- 
+packageName
+test start:  "05-10-20 18:47:34.552000"
+test end  :  "05-10-20 18:47:49.746000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 18:47:49.747000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-10-20 18:47:49.747000"
+test end  :  "05-10-20 18:47:49.840000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 18:47:49.841000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+International number +59122794948
+-------------ERROR  ------------------------------------------- 
+packageName
+test start:  "05-10-20 18:47:49.841000"
+test end  :  "05-10-20 18:48:04.512000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 18:48:04.513000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+Emergency number 911
+-------------ERROR  ------------------------------------------- 
+packageName
+test start:  "05-10-20 18:48:04.513000"
+test end  :  "05-10-20 18:48:19.239000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 18:48:19.240000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+National number 4493019556
+test start:  "05-10-20 21:22:13.087000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+National number 4493019556
+test start:  "05-10-20 21:22:25.617000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+National number 4493019556
+test start:  "05-10-20 21:22:45.645000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+National number 4493019556
+-------------ERROR  ------------------------------------------- 
+packageName
+test start:  "05-10-20 21:22:45.645000"
+test end  :  "05-10-20 21:23:05.926000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:23:05.927000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-10-20 21:23:05.927000"
+test end  :  "05-10-20 21:23:06.017000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:23:06.017000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+International number +59122794948
+-------------ERROR  ------------------------------------------- 
+packageName
+test start:  "05-10-20 21:23:06.017000"
+test end  :  "05-10-20 21:23:20.722000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:23:20.723000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+Emergency number 911
+test start:  "05-10-20 21:23:57.400000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+National number 4493019556
+test start:  "05-10-20 21:26:45.196000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+National number 4493019556
+-------------ERROR  ------------------------------------------- 
+android.support.test.uiautomator.UiObjectNotFoundException: UiSelector[CLASS=android.widget.EditText, PACKAGE NAME=com.google.android.dialer]
+test start:  "05-10-20 21:26:45.196000"
+test end  :  "05-10-20 21:27:30.408000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:27:30.409000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-10-20 21:27:30.409000"
+test end  :  "05-10-20 21:27:30.507000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:27:30.508000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+International number +59122794948
+test start:  "05-10-20 21:31:35.437000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+National number 4493019556
+-------------ERROR  ------------------------------------------- 
+android.support.test.uiautomator.UiObjectNotFoundException: UiSelector[CLASS=android.widget.EditText, PACKAGE NAME=com.google.android.dialer]
+test start:  "05-10-20 21:31:35.437000"
+test end  :  "05-10-20 21:32:19.941000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:32:19.942000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-10-20 21:32:19.942000"
+test end  :  "05-10-20 21:32:20.034000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:32:20.035000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+International number +59122794948
+test start:  "05-10-20 21:37:11.904000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+National number 4493019556
+-------------ERROR  ------------------------------------------- 
+packageName
+test start:  "05-10-20 21:37:11.904000"
+test end  :  "05-10-20 21:37:35.239000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:37:35.240000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-10-20 21:37:35.240000"
+test end  :  "05-10-20 21:37:35.329000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:37:35.330000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+International number +59122794948
+-------------ERROR  ------------------------------------------- 
+packageName
+test start:  "05-10-20 21:37:35.330000"
+test end  :  "05-10-20 21:37:53.143000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:37:53.144000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+Emergency number 911
+test start:  "05-10-20 21:39:01.192000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+National number 4493019556
+test start:  "05-10-20 21:39:10.772000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+National number 4493019556
+CALL FAILED
+-------------RESULTS  ------------------------------------------- 
+test start:  "05-10-20 21:39:10.772000"
+test end  :  "05-10-20 21:39:41.954000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:39:41.954000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-10-20 21:39:41.954000"
+test end  :  "05-10-20 21:39:42.055000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:39:42.056000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number---------
+International number +59122794948
+test start:  "05-10-20 21:41:10.493000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+National number 4493019556
+-------------ERROR  ------------------------------------------- 
+android.support.test.uiautomator.UiObjectNotFoundException: UiSelector[TEXT=Phone, CLASS=android.widget.TextView]
+test start:  "05-10-20 21:41:10.493000"
+test end  :  "05-10-20 21:41:36.100000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:41:36.102000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-10-20 21:41:36.102000"
+test end  :  "05-10-20 21:41:36.195000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:41:36.196000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+International number +59177236019
+test start:  "05-10-20 21:42:46.641000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+National number 4493019556
+CALL FAILED
+-------------RESULTS  ------------------------------------------- 
+test start:  "05-10-20 21:42:46.641000"
+test end  :  "05-10-20 21:43:45.415000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:43:45.417000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-10-20 21:43:45.417000"
+test end  :  "05-10-20 21:43:45.504000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:43:45.504000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+International number +59177236019
+-------------ERROR  ------------------------------------------- 
+android.support.test.uiautomator.UiObjectNotFoundException: UiSelector[TEXT=+, CLASS=android.widget.TextView]
+test start:  "05-10-20 21:43:45.504000"
+test end  :  "05-10-20 21:44:21.373000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:44:21.374000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+Emergency number 911
+test start:  "05-10-20 21:47:00.326000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+National number 4493019556
+CALL FAILED
+-------------RESULTS  ------------------------------------------- 
+test start:  "05-10-20 21:47:00.326000"
+test end  :  "05-10-20 21:47:58.997000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:47:58.998000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+-------------ERROR  ------------------------------------------- 
+The string supplied did not seem to be a phone number.
+test start:  "05-10-20 21:47:58.998000"
+test end  :  "05-10-20 21:47:59.103000"
+--------------------------------------------------------------- 
+ 
+
+test start:  "05-10-20 21:47:59.103000" 
+ Device 1 = ['6JHNW19C02007532']
+Script Dial Number UI---------
+International number +59177236019
+CALL FAILED

@@ -48,30 +48,20 @@ def action(turn, logger, controller, params):
             controller.click_detailed_button(params['ON']['className'], params['ON']['packageName'], "")
             if controller.button_checked(params['ON']['packageName'], params['ON']['className'], params['ON']['resourceId']):
                 logger.write_log("WIFI TURNED ON")
-                controller.click_back()
-                time.sleep(10)
-                value = controller.info_detailed_select(params["connection"]["className"],
-                                                        params["connection"]["packageName"],
-                                                        params["connection"]["resourceId"])
-                if value:
-                    logger.write_log("SUCCESSFUL CONNECTION TO: " + value)
-                else:
-                    logger.write_log("CONNECTION FAIL")
-                controller.click_home()
-                logger.end_log()
         else:
             logger.write_log("WIFI ALREADY ON")
-            controller.click_back()
-            time.sleep(10)
-            value = controller.info_detailed_select(params["connection"]["className"],
-                                                    params["connection"]["packageName"],
-                                                    params["connection"]["resourceId"])
-            if value:
-                logger.write_log("SUCCESSFUL CONNECTION TO: " + value)
-            else:
-                logger.write_log("CONNECTION FAIL")
-            controller.click_home()
+        controller.click_back()
+        time.sleep(10)
+        value = controller.info_detailed_select(params["connection"]["className"],
+                                                params["connection"]["packageName"],
+                                                params["connection"]["resourceId"])
+        if value:
+            logger.write_log("SUCCESSFUL CONNECTION TO: " + value)
             logger.end_log()
+
+        else:
+            logger.error__log("NOT CONNECTED TO A NETWORK")
+        controller.click_home()
     elif turn == "OFF":
         if controller.button_checked(params['ON']['packageName'], params['ON']['className'], params['ON']['resourceId']):
             logger.write_log("Status: Wifi On")

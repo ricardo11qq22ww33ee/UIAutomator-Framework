@@ -47,5 +47,39 @@
   "calculator_delete": { "packageName": "com.google.android.calculator",
                   "className": "android.widget.ImageButton",
                   "description": "delete"
-  }
+  },
+  "ON":  { "className": "android.widget.Switch",
+              "packageName": "com.android.settings",
+              "resourceId": "com.android.settings:id/switch_widget"
+            },
+
+  "OFF":  { "className": "android.widget.Switch",
+              "packageName": "com.android.settings",
+              "resourceId": "com.android.settings:id/switch_widget"
+            },
+  "+":  { "description": "plus",
+              "className": "android.widget.Button",
+              "packageName": "com.google.android.calculator"
+            },
+    "-":  { "description": "minus",
+              "className": "android.widget.Button",
+              "packageName": "com.google.android.calculator"
+            },
+    "x":  { "description": "multiply",
+              "className": "android.widget.Button",
+              "packageName": "com.google.android.calculator"
+            },
+    "/":  { "description": "divide",
+              "className": "android.widget.Button",
+              "packageName": "com.google.android.calculator"
+            },
+    "=":  { "description": "equals",
+              "className": "android.widget.Button",
+              "packageName": "com.google.android.calculator"
+            },
+  "connection":  { "className": "android.widget.TextView",
+              "packageName": "com.android.settings",
+              "resourceId": "android:id/summary"
+            },
+  "digit_calculator": "android.widget.Button"
 }

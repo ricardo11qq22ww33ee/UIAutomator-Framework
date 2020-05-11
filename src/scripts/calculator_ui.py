@@ -30,6 +30,14 @@ def run(a, op, b, filename="log_calculator.txt"):
                 action(logger, controller, calculator, device_params)
             else:
                 logger.error_log("Validation of Inputs Failed")
+        except SyntaxError as ex:
+            logger.end_log(ex.message)
+        except ValueError as ex:
+            logger.end_log(ex.message)
+        except TypeError as ex:
+            logger.end_log(ex.message)
+        except ZeroDivisionError as ex:
+            logger.end_log(ex.message)
         except Exception as ex:
             logger.error_log(ex.message)
 

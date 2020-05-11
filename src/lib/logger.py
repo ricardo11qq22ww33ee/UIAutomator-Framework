@@ -26,12 +26,12 @@ class Logger:
             print str(text)
         f.close()
 
-    def end_log(self):
+    def end_log(self, message=""):
         f = open(self.path + self.filename, "a")
         stop = str(datetime.datetime.now(pytz.timezone('US/Pacific')).strftime('"%m-%d-%y %H:%M:%S.%f"'))
         start = 'test start:  %s' % self.start
         end = 'test end  :  %s' % stop
-        text = "-------------RESULTS  ------------------------------------------- \n" + "Test Successful \n" + start + "\n" + end + "\n" + "--------------------------------------------------------------- \n \n"
+        text = "-------------RESULTS  ------------------------------------------- \n" + message + "\n" "Test Pass \n" + start + "\n" + end + "\n" + "--------------------------------------------------------------- \n \n"
         f.write(text + "\n")
         if self.verbose:
             print str(text)

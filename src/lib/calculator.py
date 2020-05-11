@@ -96,5 +96,6 @@ class Calculator:
             self.res = 0
         result = result.encode('ascii', 'replace')
         result = result.replace('?', '-')
+        result = result.replace(',', '')
         result = Decimal(result)
         return utils.isclose(float(result), float(self.res))

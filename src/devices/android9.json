@@ -3,8 +3,9 @@
   "textField_className":"android.widget.EditText",
   "textField_packageName":"com.google.android.dialer",
   "digit_className": "android.widget.TextView",
-  "phone":  { "text": "Phone",
-              "className": "android.widget.TextView"
+  "phone":  { "description": "Phone",
+              "className": "android.widget.TextView",
+              "packageName": "com.motorola.launcher3"
             },
   "settings":  { "text": "Settings",
               "className": "android.widget.TextView"

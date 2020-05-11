@@ -12,15 +12,15 @@ def run_suite():
     # TC-007
     #DialNumber.run("+59122794948")
     # TC-008
-    #DialNumber.run("911")
+    DialNumber.run("911")
     # TC-009
-    DialNumberUI.run("4493019556")
-    # TC-010
-    DialNumberUI.run("4kj234hj1")
-    # TC-011
-    DialNumberUI.run("+59177236019")
-    # TC-012
-    DialNumberUI.run("911")
+    # DialNumberUI.run("4493019556")
+    # # TC-010
+    # DialNumberUI.run("4kj234hj1")
+    # # TC-011
+    # DialNumberUI.run("+59177236019")
+    # # TC-012
+    # DialNumberUI.run("911")
 
 
 if __name__ == "__main__":

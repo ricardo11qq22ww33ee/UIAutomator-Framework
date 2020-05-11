@@ -45,14 +45,14 @@ def action(logger, controller, number, params):
     controller.unlock_phone()
     controller.click_home()
     controller.click_detailed_button(params["phone"]["className"], params["phone"]["packageName"], params["phone"]["description"])
-    controller.click_button(params['phone']['text'], params['phone']['className'])
     if controller.detailed_button_exists(params['key-pad']['className'], params['key-pad']['packageName'], params['key-pad']['description']):
         controller.click_detailed_button(params['key-pad']['className'], params['key-pad']['packageName'], params['key-pad']['description'])
     controller.longclick_detailed_button(params['backspace']['className'], params['backspace']['packageName'], params['backspace']['description'])
-    controller.set_text_textfield(params['textField_className'], params['textField_packageName'], number)
-    controller.click_detailed_button(params['dial']['className'], params['dial']['packageName'], params['dial']['description'])
+    # controller.set_text_textfield(params['textField_className'], params['textField_packageName'], number)
+    # controller.click_detailed_button(params['dial']['className'], params['dial']['packageName'], params['dial']['description'])
+    controller.call_adb(number)
     if controller.detailed_button_exists(params['hang']['className'], params['hang']['packageName'], params['hang']['description']):
-        time.sleep(1)
+        time.sleep(3)
         logger.write_log("SUCCESSFUL CALL")
         controller.click_detailed_button(params['hang']['className'], params['hang']['packageName'], params['hang']['description'])
     else:

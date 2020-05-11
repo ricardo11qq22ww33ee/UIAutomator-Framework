@@ -84,4 +84,3 @@ def action(logger, controller, calculator, params):
 if __name__ == "__main__":
     # manual input
     run("2", "/", "3616431")
-

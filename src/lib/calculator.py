@@ -89,6 +89,9 @@ class Calculator:
             return Decimal(a) * Decimal(b)
 
     def validate_result(self, result):
+        # edge case
+        if str(self.res) == "-0":
+            self.res = 0
         result = result.encode('ascii', 'replace')
         result = result.replace('?', '-')
         result = Decimal(result)

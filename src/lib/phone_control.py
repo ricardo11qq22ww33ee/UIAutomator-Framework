@@ -91,6 +91,12 @@ class PhoneControl:
     def set_text_textfield(self,  classname, packagename, content):
         self.device(packageName=packagename, className=classname).set_text(content)
 
+    def get_text_textfield(self,  classname, packagename):
+        return self.device(packageName=packagename, className=classname).info['text']
+
+    def clear_text_textfield(self,  classname, packagename):
+        self.device(packageName=packagename, className=classname).clear_text()
+
     def version(self):
         output = check_output(['adb', '-s',  self.serial, 'shell', 'getprop', 'ro.build.version.release'])
         ver = ""

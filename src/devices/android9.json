@@ -30,5 +30,22 @@
   "hang":  { "description": "End Call",
                 "className": "android.widget.ImageButton",
                 "packageName": "com.google.android.dialer"
-              }
+              },
+  "calculator": { "text": "Calculator",
+                  "className": "android.widget.TextView"
+  },
+  "calculator_button": { "packageName": "com.google.android.calculator",
+                  "className": "android.widget.Button"
+  },
+  "calculator_textfield": { "packageName": "com.google.android.calculator",
+                  "className": "android.widget.TextView"
+  },
+  "calculator_clear": { "packageName": "com.google.android.calculator",
+                  "className": "android.widget.Button",
+                  "description": "clear"
+  },
+  "calculator_delete": { "packageName": "com.google.android.calculator",
+                  "className": "android.widget.ImageButton",
+                  "description": "delete"
+  }
 }

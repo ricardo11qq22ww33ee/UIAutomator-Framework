@@ -19,7 +19,5 @@ def run_suite():
                 continue
 
 
-
-
 if __name__ == "__main__":
     run_suite()

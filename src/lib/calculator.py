@@ -1,4 +1,6 @@
-
+# coding=utf-8
+from decimal import *
+import utils
 
 class Calculator:
     # a, op, b must be strings
@@ -9,24 +11,23 @@ class Calculator:
         self.number2 = 0.0
         self.operator = ""
         if self.validate_digits(a) and self.validate_digits(b):
-            self.res = self.calculate(a, b, op)
+            self.res, self.operator = self.calculate(a, b, op)
             self.valid = True
             self.number1 = a
             self.number2 = b
-            self.operator = op
         else:
-            raise SyntaxError("invalid input")
+            raise SyntaxError("Invalid Input. Check Input File")
 
-    def calculate(self, a, b, op):
+    def calculate(self, a, b, op, digits=12):
         # switch of operations
         if op == '+':
-            return self.addition(a, b)
-        elif op == '-':
-            return self.subtraction(a, b)
-        elif op == 'x':
-            return self.multiplication(a, b)
-        elif op == '/':
-            return self.division(a, b)
+            return self.addition(a, b, digits), '+'
+        elif op == '-' or op == '−':
+            return self.subtraction(a, b, digits), '−'
+        elif op == 'x' or op == '*' or op == '×':
+            return self.multiplication(a, b, digits), '×'
+        elif op == '/' or op == '÷':
+            return self.division(a, b, digits), '÷'
         else:
             raise SyntaxError("Unsupported Operation")
 
@@ -38,9 +39,11 @@ class Calculator:
             array = [n]
         if len(array) == 2:
             if len(array[1]) > 10:
-                return False
+                raise SyntaxError("Too many decimal digits")
             if len(array[0]) <= 15 and len(array[1]) <= 15 - len(array[0]):
                 return True
+            else:
+                raise SyntaxError("Too many digits")
         elif len(array) == 1:
             if len(array[0]) <= 15:
                 return True
@@ -50,27 +53,43 @@ class Calculator:
     def validate_numbers(self, a, b):
         a = float(a)
         b = float(b)
+        # if b < 0:
+        #     raise ValueError("Second Input must be Positive")
         if not type(a) is float:
             raise TypeError("Invalid First Input")
         if not type(b) is float:
             raise TypeError("Invalid Second Input")
         return True
 
-    def division(self, a, b):
+    def division(self, a, b, dig):
         if self.validate_numbers(a, b):
             b = float(b)
             if b == 0.0:
                 raise ZeroDivisionError("Invalid Zero Division")
-            return float(a) / float(b)
+            getcontext().prec = dig
+            return Decimal(a) /  Decimal(b)
 
-    def addition(self, a, b):
+    def addition(self, a, b, dig):
         if self.validate_numbers(a, b):
-            return float(a) + float(b)
+            getcontext().prec = dig
+            return Decimal(a) + Decimal(b)
 
-    def subtraction(self, a, b):
+    def subtraction(self, a, b, dig):
         if self.validate_numbers(a, b):
-            return float(a) - float(b)
+            b = float(b)
+            if b < 0.0:
+                b = b*-1
 
-    def multiplication(self, a, b):
+            getcontext().prec = dig
+            return Decimal(a) - Decimal(b)
+
+    def multiplication(self, a, b, dig):
         if self.validate_numbers(a, b):
-            return float(a) * float(b)
+            getcontext().prec = dig
+            return Decimal(a) * Decimal(b)
+
+    def validate_result(self, result):
+        result = result.encode('ascii', 'replace')
+        result = result.replace('?', '-')
+        result = Decimal(result)
+        return utils.isclose(float(result), float(self.res))

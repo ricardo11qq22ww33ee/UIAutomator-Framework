@@ -31,7 +31,7 @@ class Logger:
         stop = str(datetime.datetime.now(pytz.timezone('US/Pacific')).strftime('"%m-%d-%y %H:%M:%S.%f"'))
         start = 'test start:  %s' % self.start
         end = 'test end  :  %s' % stop
-        text = "-------------RESULTS  ------------------------------------------- \n" + start + "\n" + end + "\n" + "--------------------------------------------------------------- \n \n"
+        text = "-------------RESULTS  ------------------------------------------- \n" + "Test Successful \n" + start + "\n" + end + "\n" + "--------------------------------------------------------------- \n \n"
         f.write(text + "\n")
         if self.verbose:
             print str(text)
@@ -42,7 +42,7 @@ class Logger:
         stop = str(datetime.datetime.now(pytz.timezone('US/Pacific')).strftime('"%m-%d-%y %H:%M:%S.%f"'))
         start = 'test start:  %s' % self.start
         end = 'test end  :  %s' % stop
-        text = "-------------ERROR  ------------------------------------------- \n" + error + "\n" + start + "\n" + end + "\n" + "--------------------------------------------------------------- \n \n"
+        text = "-------------ERROR  ------------------------------------------- \n" + "Test Failed \n" + error + "\n" + start + "\n" + end + "\n" + "--------------------------------------------------------------- \n \n"
         f.write(text + "\n")
         if self.verbose:
             print str(text)

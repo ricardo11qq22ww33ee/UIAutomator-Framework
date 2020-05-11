@@ -25,7 +25,7 @@ def validate_number(number):
 
 def read_json(name):
     path = os.path.dirname(os.path.abspath(__file__))
-    path = os.path.join(path, "..", "devices", "", name+".json")
+    path = os.path.join(path, "..", "devices", "", name + ".json")
     with open(path, 'r') as json_file:
         data = json.load(json_file)
     return data
@@ -37,4 +37,9 @@ def get_device_data(serialnumber):
         device_version = devices[serialnumber]
         return read_json(device_version)
     else:
-        raise KeyError('Not compatible with your device. (have you added your device serial to src/devices/device_compatibility.json ?)')
+        raise KeyError(
+            'Not compatible with your device. (have you added your device serial to src/devices/device_compatibility.json ?)')
+
+
+def isclose(a, b, rel_tol=1e-09, abs_tol=0.0):
+    return abs(a - b) <= max(rel_tol * max(abs(a), abs(b)), abs_tol)

@@ -9,9 +9,9 @@ def run_framework():
     # Wifi Suite
     WifiSuite.run_suite()
     # Dialer Suite
-    DialerSuite.run_suite()
+    #DialerSuite.run_suite()
     # Calculator Suite
-    CalculatorSuite.run_suite()
+    #CalculatorSuite.run_suite()
 
 
 if __name__ == "__main__":

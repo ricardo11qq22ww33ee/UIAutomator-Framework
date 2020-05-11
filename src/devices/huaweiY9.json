@@ -1,14 +1,19 @@
 { "button_className":"android.widget.TextView",
   "switch_className":"android.widget.Switch",
   "textField_className":"android.widget.EditText",
-  "textField_packageName":"com.google.android.dialer",
+  "textField_packageName":"com.android.contacts",
+  "calculator_packageName": "com.android.calculator2",
   "digit_className": "android.widget.TextView",
+  "digit_calculator": "android.widget.Button",
   "phone":  { "text": "Phone",
               "className": "android.widget.TextView",
               "packageName": "com.huawei.android.launcher",
               "description": "Phone"
             },
   "settings":  { "text": "Settings",
+              "className": "android.widget.TextView"
+            },
+  "calculator":  { "text": "Calculator",
               "className": "android.widget.TextView"
             },
   "network":  { "text": "Wireless & networks",
@@ -19,18 +24,52 @@
             },
   "key-pad":  { "description": "key pad",
                "text": "Phone",
-              "className": "android.widget.TextView"
+              "className": "android.widget.TextView",
+              "packageName": "com.android.contacts"
             },
   "backspace":  { "description": "backspace",
               "className": "android.widget.LinearLayout",
               "packageName": "com.android.contacts"
             },
-  "dial":  { "description": "Dial",
-                "resource_id": "com.android.contacts:id/dialButton",
+  "dial":  { "description": "dial",
+                "packageName": "com.android.contacts",
               "className": "android.widget.ImageButton"
               },
   "hang":  { "description": "End Call",
                 "className": "android.widget.ImageButton",
                 "packageName": "com.google.android.dialer"
-              }
+              },
+  "ON":  { "className": "android.widget.Switch",
+              "packageName": "com.android.settings",
+              "resourceId": "com.android.settings:id/switch_widget"
+            },
+
+  "OFF":  { "className": "android.widget.Switch",
+              "packageName": "com.android.settings",
+              "resourceId": "com.android.settings:id/switch_widget"
+            },
+    "+":  { "description": "plus",
+              "className": "android.widget.ImageView",
+              "packageName": "com.android.calculator2"
+            },
+    "-":  { "description": "minus",
+              "className": "android.widget.ImageView",
+              "packageName": "com.android.calculator2"
+            },
+    "x":  { "description": "multiply",
+              "className": "android.widget.ImageView",
+              "packageName": "com.android.calculator2"
+            },
+    "/":  { "description": "divide",
+              "className": "android.widget.ImageView",
+              "packageName": "com.android.calculator2"
+            },
+    "=":  { "description": "equals",
+              "className": "android.widget.ImageView",
+              "packageName": "com.android.calculator2"
+            },
+  "connection":  { "className": "android.widget.TextView",
+              "packageName": "com.android.settings",
+              "resourceId": "android:id/summary"
+            }
 }

@@ -9,6 +9,7 @@ from src.lib.phone_control import PhoneControl
 from src.lib.logger import Logger
 import src.lib.utils as utils
 import os
+import json
 from src.lib.calculator import Calculator
 
 
@@ -31,17 +32,39 @@ def run(a, op, b, filename="log_calculator.txt"):
             calculator = Calculator(a, op, b)
             if calculator.valid:
                 logger.write_log("Operation: " + a + op + b)
-                action(logger, controller, calculator, device_params)
+                action(logger, controller, calculator, device_params, a, b, op)
             else:
                 logger.error_log("Validation of Inputs Failed")
         except Exception as ex:
             logger.error_log(ex.message)
 
 
-def action(logger, controller, calculator, params):
+def action(logger, controller, calculator, params, a, b, op):
     controller.unlock_phone()
     controller.click_home()
+    controller.click_button(params['calculator']['text'], params['settings']['className'])
+    for i in a:
+        if i == "-":
+            controller.click_detailed_button(params["-"]["className"], params["-"]["packageName"], params["-"]["description"])
+        else:
+            controller.click_button(i, params['digit_calculator'])
+    controller.click_detailed_button(params[op]["className"], params[op]["packageName"], params[op]["description"])
+    for i in b:
+        if i == "-":
+            controller.click_detailed_button(params["-"]["className"], params["-"]["packageName"],
+                                             params["-"]["description"])
+        else:
+            controller.click_button(i, params['digit_calculator'])
+    controller.click_detailed_button(params["="]["className"], params["="]["packageName"], params["="]["description"])
+    value = controller.info_select(params["textField_className"], params["calculator_packageName"])
     logger.write_log(calculator.res)
+    logger.write_log(value)
+    if value == calculator.res:
+        time.sleep(1)
+        logger.write_log("SUCCESSFUL CALCULATION")
+    else:
+        time.sleep(1)
+        logger.write_log("CALCULATION FAIL")
     controller.click_home()
     logger.end_log()
 

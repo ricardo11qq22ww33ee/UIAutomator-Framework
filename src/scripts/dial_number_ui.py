@@ -38,7 +38,7 @@ def run(number=None, filename="log_dialer.txt"):
                 logger.write_log(msg + " " + str(parsedNumber))
                 action(logger, controller, parsedNumber, device_params)
             else:
-                logger.error_log("Invalid phone number")
+                logger.end_log("Invalid phone number")
         except Exception as ex:
             logger.error_log(ex.message)
 
@@ -68,10 +68,11 @@ def action(logger, controller, number, params):
         logger.write_log("SUCCESSFUL CALL")
         controller.click_detailed_button(params['hang']['className'], params['hang']['packageName'],
                                          params['hang']['description'])
+        logger.end_log()
     else:
-        logger.write_log("CALL FAILED")
+        logger.error_log("CALL FAILED")
     controller.click_home()
-    logger.end_log()
+
 
 
 # ---------------------------------------------------------------------------

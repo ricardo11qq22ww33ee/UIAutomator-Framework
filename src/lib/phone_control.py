@@ -38,8 +38,7 @@ class PhoneControl:
         time.sleep(self.time)
 
     def call_adb(self, number):
-        print "entro"
-        check_output(['adb', 'shell', 'am', 'start', '-a', 'android.intent.action.CALL', '-d', 'tel:' + number])
+        check_output(['adb', 'shell', 'am', 'start', '-a', 'android.intent.action.CALL', '-d', 'tel:' + str(number)])
         self.device.wait.update()
 
     def click_button(self, text, classname):

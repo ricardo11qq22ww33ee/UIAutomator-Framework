@@ -73,7 +73,7 @@ Desde la ***root*** del proyecto ejecutar el comando;
 Esto ejecutara todas las suites que se hayan declarado previamente.
 
 
-### Ejecutar suitrs particulares manualmente
+### Ejecutar test suites particulares manualmente
 
 Si se desea, se pueden ejecutar test suites manualmente. Desde la root, ejecutar:
 

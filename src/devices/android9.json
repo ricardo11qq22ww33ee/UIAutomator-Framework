@@ -3,8 +3,9 @@
   "textField_className":"android.widget.EditText",
   "textField_packageName":"com.google.android.dialer",
   "digit_className": "android.widget.TextView",
-  "phone":  { "text": "Phone",
-              "className": "android.widget.TextView"
+  "phone":  { "description": "Phone",
+              "className": "android.widget.TextView",
+              "packageName": "com.motorola.launcher3"
             },
   "settings":  { "text": "Settings",
               "className": "android.widget.TextView"
@@ -30,5 +31,56 @@
   "hang":  { "description": "End Call",
                 "className": "android.widget.ImageButton",
                 "packageName": "com.google.android.dialer"
-              }
+              },
+  "calculator": { "text": "Calculator",
+                  "className": "android.widget.TextView"
+  },
+  "calculator_button": { "packageName": "com.google.android.calculator",
+                  "className": "android.widget.Button"
+  },
+  "calculator_textfield": { "packageName": "com.google.android.calculator",
+                  "className": "android.widget.TextView"
+  },
+  "calculator_clear": { "packageName": "com.google.android.calculator",
+                  "className": "android.widget.Button",
+                  "description": "clear"
+  },
+  "calculator_delete": { "packageName": "com.google.android.calculator",
+                  "className": "android.widget.ImageButton",
+                  "description": "delete"
+  },
+  "ON":  { "className": "android.widget.Switch",
+              "packageName": "com.android.settings",
+              "resourceId": "com.android.settings:id/switch_widget"
+            },
+
+  "OFF":  { "className": "android.widget.Switch",
+              "packageName": "com.android.settings",
+              "resourceId": "com.android.settings:id/switch_widget"
+            },
+  "+":  { "description": "plus",
+              "className": "android.widget.Button",
+              "packageName": "com.google.android.calculator"
+            },
+    "-":  { "description": "minus",
+              "className": "android.widget.Button",
+              "packageName": "com.google.android.calculator"
+            },
+    "x":  { "description": "multiply",
+              "className": "android.widget.Button",
+              "packageName": "com.google.android.calculator"
+            },
+    "/":  { "description": "divide",
+              "className": "android.widget.Button",
+              "packageName": "com.google.android.calculator"
+            },
+    "=":  { "description": "equals",
+              "className": "android.widget.Button",
+              "packageName": "com.google.android.calculator"
+            },
+  "connection":  { "className": "android.widget.TextView",
+              "packageName": "com.android.settings",
+              "resourceId": "android:id/summary"
+            },
+  "digit_calculator": "android.widget.Button"
 }

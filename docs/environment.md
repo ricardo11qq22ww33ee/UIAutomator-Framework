@@ -1,21 +1,19 @@
 # Environment
 
-Este documento contiene el ambiente donde se ejecutaran los scripts
+Los detalles del environment se encuentran en el documento del Test Plan
 
-## Dispositivo Movil
+## Prerrequisitos
 
-**Marca :** Motorola
+-Debe haber un acceso directo en el home del telefono, donde se pueda abrir las siguientes aplicaciones:
 
-**Modelo :** Moto G6
+- Phone
+- Calculator
+- Settings
 
-**RAM :** 3.00 GB
+-Se debe agregar el serial del telefono al documento src/devices/device_compatibility.json, especificando que version de Android
+utilizar. 
 
-**Serial :** ZY323XP43F
 
-**Mobile Carrier:** Movistar
-
-**Pais:** Mexico
-
-**Android Version:** Android 9
-
-**Idioma del Telefono:** Ingles
+-Las versiones de Android son representadas el los .json de src/devices. Estos contienen los detalles de los objetos, dependiendo
+de la version. Si se desea agregar compatibilidad para una nueva version, se debe implementar ese json correspondiente, con
+los nombres de uiautomator necesarios.

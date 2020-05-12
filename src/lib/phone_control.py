@@ -1,6 +1,7 @@
 # coding=utf-8
 from subprocess import check_call, check_output
 import time
+import json
 from uiautomator import Device
 
 
@@ -27,9 +28,18 @@ class PhoneControl:
         check_call(['adb', '-s', self.serial, 'shell', 'input keyevent', 'KEYCODE_WAKEUP'])
         time.sleep(self.time)
 
+
     def click_home(self):
         check_call(['adb', '-s', self.serial, 'shell', 'input keyevent', 'KEYCODE_HOME'])
         time.sleep(self.time)
+
+    def click_back(self):
+        check_call(['adb', '-s', self.serial, 'shell', 'input keyevent', 'KEYCODE_BACK'])
+        time.sleep(self.time)
+
+    def call_adb(self, number):
+        check_output(['adb', 'shell', 'am', 'start', '-a', 'android.intent.action.CALL', '-d', 'tel:' + str(number)])
+        self.device.wait.update()
 
     def click_button(self, text, classname):
         self.device(text=text, className=classname).click()
@@ -41,6 +51,30 @@ class PhoneControl:
 
     def button_exists(self, text, classname):
         if self.device(text=text, className=classname).exists:
+            return True
+        else:
+            return False
+
+    def info_select(self, classname, packagename):
+        if self.device(className=classname, packageName=packagename).info:
+            value = self.device(className=classname, packageName=packagename).info
+            value = json.dumps(value)
+            value = json.loads(value)
+            return float(value["text"])
+        else:
+            return False
+
+    def info_detailed_select(self, classname, packagename, resourceid):
+        if self.device(className=classname, packageName=packagename, resourceId=resourceid).info:
+            value = self.device(className=classname, packageName=packagename, resourceId=resourceid).info
+            value = json.dumps(value)
+            value = json.loads(value)
+            return value["text"]
+        else:
+            return False
+
+    def button_checked(self, packagename, classname, resourceid):
+        if self.device(resourceId=resourceid, className=classname, packageName=packagename).checked:
             return True
         else:
             return False
@@ -60,4 +94,18 @@ class PhoneControl:
 
     def set_text_textfield(self,  classname, packagename, content):
         self.device(packageName=packagename, className=classname).set_text(content)
+
+    def get_text_textfield(self,  classname, packagename):
+        return self.device(packageName=packagename, className=classname).info['text']
+
+    def clear_text_textfield(self,  classname, packagename):
+        self.device(packageName=packagename, className=classname).clear_text()
+
+    def version(self):
+        output = check_output(['adb', '-s',  self.serial, 'shell', 'getprop', 'ro.build.version.release'])
+        ver = ""
+        for c in output:
+            if c.isalnum():
+                ver += c
+        return ver
 

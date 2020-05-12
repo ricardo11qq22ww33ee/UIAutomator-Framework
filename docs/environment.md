@@ -1,16 +1,6 @@
 # Environment
 
-Este documento contiene el ambiente donde se ejecutaran los scripts
-
-## Dispositivo Movil
-
-**Serial :** ZY323XP43F
-
-**Pais:** Mexico
-
-**Android Version:** Android 9
-
-**Idioma del Telefono:** Ingles
+Los detalles del environment se encuentran en el documento del Test Plan
 
 ## Prerrequisitos
 

@@ -45,15 +45,17 @@ Despues de habeer cumplido todos los requisitos del setup, abrir una consola o t
 
 ### Seleccionar las test suites a ejecutar
 
-Para seleccionar que test suites ejecutar, se debe modificar el archivo **main.py**.
+Para seleccionar que test suites ejecutar, se debe modificar el archivo **main.py**, para definir las test suites que se desean ejecutar.
 
 ```
 def run_framework():
     # here all the suites specified will be ran, to execute all test cases
     # Wifi Suite
-    WifiSuite.run_suite(device_version="android9")
+    WifiSuite.run_suite()
     # Dialer Suite
-    DialerSuite.run_suite(device_version="android9")
+    DialerSuite.run_suite()
+    # Calculator Suite
+    CalculatorSuite.run_suite()
 
 
 if __name__ == "__main__":
@@ -71,15 +73,14 @@ Desde la ***root*** del proyecto ejecutar el comando;
 Esto ejecutara todas las suites que se hayan declarado previamente.
 
 
-### Ejecutar scripts particulares manualmente
+### Ejecutar suitrs particulares manualmente
 
-Si se desea, se pueden ejecutar scripts manualmente. Desde la root, ejecutar:
+Si se desea, se pueden ejecutar test suites manualmente. Desde la root, ejecutar:
 
-`cd src/scripts`
+`cd src/suites`
 
-Una vez en el directorio de los scripts, si por ejemplo quiero ejecutar dial_number con mis propios inputs:
+Una vez en el directorio de las suites, se definen los scripts a correr y se definen los inputs. Por ejemplo, para correr la suite de Calculadora:
 
-`python dial_number.py`
+`python calculatorapp.py`
 
-En este caso, se le solicitara por consola el input del numero con el que se desea realizar la marcacion.
-
+En este caso, se deben definir los inputs de la calculadora en el archivo *inputs/calculatorapp.txt*

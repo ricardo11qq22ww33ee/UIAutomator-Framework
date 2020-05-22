@@ -2,3 +2,4 @@ phonenumbers==8.12.1
 pytz==2019.3
 uiautomator==0.3.6
 urllib3==1.25.8
+twilio==6.40.0

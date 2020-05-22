@@ -8,9 +8,9 @@ def run_suite():
     TurnWifi.run("OFF")
     # TC-002
     TurnWifi.run("OFF")
-    # TC-002
+    # TC-003
     TurnWifi.run("ON")
-    # TC-002
+    # TC-004
     TurnWifi.run("ON")
 
 

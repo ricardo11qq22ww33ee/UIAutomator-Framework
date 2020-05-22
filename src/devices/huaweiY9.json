@@ -83,4 +83,20 @@
   "calculator_textfield": { "packageName": "com.android.calculator2",
                   "className": "android.widget.EditText"
   }
+  ,
+    "tex-to-speech":  { "description": "Text to Speech (TTS)",
+              "className": "android.widget.TextView",
+              "packageName": "com.huawei.android.launcher"
+            },
+  "tex-to-speech-edit":  {"className": "android.widget.EditText",
+              "packageName": "com.textsprecher"
+            },
+  "speaker":  { "description": "Speak",
+              "className": "android.widget.TextView",
+              "packageName": "com.textsprecher"
+            },
+  "speaker_button":  {
+              "className": "android.widget.ImageButton",
+              "packageName": "com.textsprecher"
+            }
 }

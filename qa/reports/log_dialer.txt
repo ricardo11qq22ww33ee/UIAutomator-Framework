@@ -1,9 +1,4 @@
-
-test start:  "05-11-20 16:22:20.855000" 
- Device 1 = ['6JHNW19C02007532']
-Script Dial Number UI---------
-National number 5590458901
-test start:  "05-11-20 16:23:11.826000" 
+test start:  "05-22-20 14:53:24.675000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number---------
 National number 4491963704
@@ -11,12 +6,12 @@ SUCCESSFUL CALL
 -------------RESULTS  ------------------------------------------- 
 
 Test Pass 
-test start:  "05-11-20 16:23:11.826000"
-test end  :  "05-11-20 16:23:41.115000"
+test start:  "05-22-20 14:53:24.675000"
+test end  :  "05-22-20 14:53:48.348000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:23:44.741000" 
+test start:  "05-22-20 14:53:51.913000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number---------
 National number 5590458901
@@ -24,12 +19,12 @@ SUCCESSFUL CALL
 -------------RESULTS  ------------------------------------------- 
 
 Test Pass 
-test start:  "05-11-20 16:23:44.741000"
-test end  :  "05-11-20 16:24:08.251000"
+test start:  "05-22-20 14:53:51.913000"
+test end  :  "05-22-20 14:54:12.979000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:24:11.839000" 
+test start:  "05-22-20 14:54:16.537000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number---------
 National number 5590458901
@@ -37,292 +32,288 @@ SUCCESSFUL CALL
 -------------RESULTS  ------------------------------------------- 
 
 Test Pass 
-test start:  "05-11-20 16:24:11.839000"
-test end  :  "05-11-20 16:24:35.070000"
+test start:  "05-22-20 14:54:16.537000"
+test end  :  "05-22-20 14:54:38.344000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:24:38.692000" 
+test start:  "05-22-20 14:54:41.921000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number---------
 -------------RESULTS  ------------------------------------------- 
 Invalid phone number
 Test Pass 
-test start:  "05-11-20 16:24:38.692000"
-test end  :  "05-11-20 16:24:38.784000"
+test start:  "05-22-20 14:54:41.921000"
+test end  :  "05-22-20 14:54:42.045000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:24:38.785000" 
+test start:  "05-22-20 14:54:42.046000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number---------
 -------------RESULTS  ------------------------------------------- 
 Invalid phone number
 Test Pass 
-test start:  "05-11-20 16:24:38.785000"
-test end  :  "05-11-20 16:24:38.888000"
+test start:  "05-22-20 14:54:42.046000"
+test end  :  "05-22-20 14:54:42.163000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:24:38.889000" 
+test start:  "05-22-20 14:54:42.164000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number---------
 -------------RESULTS  ------------------------------------------- 
 Invalid phone number
 Test Pass 
-test start:  "05-11-20 16:24:38.889000"
-test end  :  "05-11-20 16:24:38.988000"
+test start:  "05-22-20 14:54:42.164000"
+test end  :  "05-22-20 14:54:42.283000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:24:38.989000" 
+test start:  "05-22-20 14:54:42.285000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number---------
--------------RESULTS  ------------------------------------------- 
+-------------ERROR  ------------------------------------------- 
+Test Failed 
 The string supplied did not seem to be a phone number.
-Test Pass 
-test start:  "05-11-20 16:24:38.989000"
-test end  :  "05-11-20 16:24:39.076000"
+test start:  "05-22-20 14:54:42.285000"
+test end  :  "05-22-20 14:54:42.404000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:24:39.077000" 
+test start:  "05-22-20 14:54:42.405000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number---------
 -------------RESULTS  ------------------------------------------- 
 Invalid phone number
 Test Pass 
-test start:  "05-11-20 16:24:39.077000"
-test end  :  "05-11-20 16:24:39.174000"
+test start:  "05-22-20 14:54:42.405000"
+test end  :  "05-22-20 14:54:42.530000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:24:39.175000" 
+test start:  "05-22-20 14:54:42.531000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number---------
 Emergency number 911
 -------------ERROR  ------------------------------------------- 
 Test Failed 
 CALL FAILED
-test start:  "05-11-20 16:24:39.175000"
-test end  :  "05-11-20 16:24:53.337000"
+test start:  "05-22-20 14:54:42.531000"
+test end  :  "05-22-20 14:54:58.089000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:24:56.850000" 
+test start:  "05-22-20 14:55:01.535000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number---------
 -------------RESULTS  ------------------------------------------- 
 Invalid phone number
 Test Pass 
-test start:  "05-11-20 16:24:56.850000"
-test end  :  "05-11-20 16:24:56.938000"
+test start:  "05-22-20 14:55:01.535000"
+test end  :  "05-22-20 14:55:01.667000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:24:56.939000" 
+test start:  "05-22-20 14:55:01.669000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number---------
--------------RESULTS  ------------------------------------------- 
+-------------ERROR  ------------------------------------------- 
+Test Failed 
 The string supplied did not seem to be a phone number.
-Test Pass 
-test start:  "05-11-20 16:24:56.939000"
-test end  :  "05-11-20 16:24:57.027000"
+test start:  "05-22-20 14:55:01.669000"
+test end  :  "05-22-20 14:55:01.768000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:24:57.028000" 
+test start:  "05-22-20 14:55:01.769000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number---------
--------------RESULTS  ------------------------------------------- 
+-------------ERROR  ------------------------------------------- 
+Test Failed 
 The string supplied did not seem to be a phone number.
-Test Pass 
-test start:  "05-11-20 16:24:57.028000"
-test end  :  "05-11-20 16:24:57.131000"
+test start:  "05-22-20 14:55:01.769000"
+test end  :  "05-22-20 14:55:01.870000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:24:57.132000" 
+test start:  "05-22-20 14:55:01.871000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number---------
--------------RESULTS  ------------------------------------------- 
+-------------ERROR  ------------------------------------------- 
+Test Failed 
 The string supplied did not seem to be a phone number.
-Test Pass 
-test start:  "05-11-20 16:24:57.132000"
-test end  :  "05-11-20 16:24:57.237000"
+test start:  "05-22-20 14:55:01.871000"
+test end  :  "05-22-20 14:55:01.981000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:24:57.237000" 
+test start:  "05-22-20 14:55:01.982000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number---------
--------------RESULTS  ------------------------------------------- 
+-------------ERROR  ------------------------------------------- 
+Test Failed 
 The string supplied did not seem to be a phone number.
-Test Pass 
-test start:  "05-11-20 16:24:57.237000"
-test end  :  "05-11-20 16:24:57.341000"
+test start:  "05-22-20 14:55:01.982000"
+test end  :  "05-22-20 14:55:02.074000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:24:57.342000" 
+test start:  "05-22-20 14:55:02.075000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number UI---------
 National number 4491963704
-SUCCESSFUL CALL
--------------RESULTS  ------------------------------------------- 
-
-Test Pass 
-test start:  "05-11-20 16:24:57.342000"
-test end  :  "05-11-20 16:25:52.562000"
+-------------ERROR  ------------------------------------------- 
+Test Failed 
+android.support.test.uiautomator.UiObjectNotFoundException: UiSelector[CLASS=android.widget.ImageButton, DESCRIPTION=dial, PACKAGE NAME=com.android.contacts]
+test start:  "05-22-20 14:55:02.075000"
+test end  :  "05-22-20 14:56:12.962000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:25:56.166000" 
+test start:  "05-22-20 14:56:12.964000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number UI---------
 National number 5590458901
-SUCCESSFUL CALL
--------------RESULTS  ------------------------------------------- 
-
-Test Pass 
-test start:  "05-11-20 16:25:56.166000"
-test end  :  "05-11-20 16:26:50.651000"
+-------------ERROR  ------------------------------------------- 
+Test Failed 
+android.support.test.uiautomator.UiObjectNotFoundException: UiSelector[CLASS=android.widget.ImageButton, DESCRIPTION=dial, PACKAGE NAME=com.android.contacts]
+test start:  "05-22-20 14:56:12.964000"
+test end  :  "05-22-20 14:57:25.568000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:26:54.250000" 
+test start:  "05-22-20 14:57:25.569000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number UI---------
 National number 5590458901
-SUCCESSFUL CALL
--------------RESULTS  ------------------------------------------- 
-
-Test Pass 
-test start:  "05-11-20 16:26:54.250000"
-test end  :  "05-11-20 16:27:48.533000"
+-------------ERROR  ------------------------------------------- 
+Test Failed 
+android.support.test.uiautomator.UiObjectNotFoundException: UiSelector[CLASS=android.widget.ImageButton, DESCRIPTION=dial, PACKAGE NAME=com.android.contacts]
+test start:  "05-22-20 14:57:25.569000"
+test end  :  "05-22-20 14:58:34.907000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:27:52.158000" 
+test start:  "05-22-20 14:58:34.909000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number UI---------
 -------------RESULTS  ------------------------------------------- 
 Invalid phone number
 Test Pass 
-test start:  "05-11-20 16:27:52.158000"
-test end  :  "05-11-20 16:27:52.254000"
+test start:  "05-22-20 14:58:34.909000"
+test end  :  "05-22-20 14:58:35.007000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:27:52.255000" 
+test start:  "05-22-20 14:58:35.007000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number UI---------
 -------------RESULTS  ------------------------------------------- 
 Invalid phone number
 Test Pass 
-test start:  "05-11-20 16:27:52.255000"
-test end  :  "05-11-20 16:27:52.362000"
+test start:  "05-22-20 14:58:35.007000"
+test end  :  "05-22-20 14:58:35.115000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:27:52.363000" 
+test start:  "05-22-20 14:58:35.116000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number UI---------
 -------------RESULTS  ------------------------------------------- 
 Invalid phone number
 Test Pass 
-test start:  "05-11-20 16:27:52.363000"
-test end  :  "05-11-20 16:27:52.449000"
+test start:  "05-22-20 14:58:35.116000"
+test end  :  "05-22-20 14:58:35.218000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:27:52.450000" 
+test start:  "05-22-20 14:58:35.219000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number UI---------
--------------RESULTS  ------------------------------------------- 
+-------------ERROR  ------------------------------------------- 
+Test Failed 
 The string supplied did not seem to be a phone number.
-Test Pass 
-test start:  "05-11-20 16:27:52.450000"
-test end  :  "05-11-20 16:27:52.542000"
+test start:  "05-22-20 14:58:35.219000"
+test end  :  "05-22-20 14:58:35.337000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:27:52.543000" 
+test start:  "05-22-20 14:58:35.338000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number UI---------
 -------------RESULTS  ------------------------------------------- 
 Invalid phone number
 Test Pass 
-test start:  "05-11-20 16:27:52.543000"
-test end  :  "05-11-20 16:27:52.645000"
+test start:  "05-22-20 14:58:35.338000"
+test end  :  "05-22-20 14:58:35.438000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:27:52.646000" 
+test start:  "05-22-20 14:58:35.439000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number UI---------
 Emergency number 911
-SUCCESSFUL CALL
--------------RESULTS  ------------------------------------------- 
-
-Test Pass 
-test start:  "05-11-20 16:27:52.646000"
-test end  :  "05-11-20 16:28:25.394000"
+-------------ERROR  ------------------------------------------- 
+Test Failed 
+android.support.test.uiautomator.UiObjectNotFoundException: UiSelector[CLASS=android.widget.ImageButton, DESCRIPTION=dial, PACKAGE NAME=com.android.contacts]
+test start:  "05-22-20 14:58:35.439000"
+test end  :  "05-22-20 14:59:22.247000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:28:28.992000" 
+test start:  "05-22-20 14:59:22.250000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number UI---------
 -------------RESULTS  ------------------------------------------- 
 Invalid phone number
 Test Pass 
-test start:  "05-11-20 16:28:28.992000"
-test end  :  "05-11-20 16:28:29.092000"
+test start:  "05-22-20 14:59:22.250000"
+test end  :  "05-22-20 14:59:22.339000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:28:29.093000" 
+test start:  "05-22-20 14:59:22.340000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number UI---------
--------------RESULTS  ------------------------------------------- 
+-------------ERROR  ------------------------------------------- 
+Test Failed 
 The string supplied did not seem to be a phone number.
-Test Pass 
-test start:  "05-11-20 16:28:29.093000"
-test end  :  "05-11-20 16:28:29.194000"
+test start:  "05-22-20 14:59:22.340000"
+test end  :  "05-22-20 14:59:22.430000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:28:29.195000" 
+test start:  "05-22-20 14:59:22.431000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number UI---------
--------------RESULTS  ------------------------------------------- 
+-------------ERROR  ------------------------------------------- 
+Test Failed 
 The string supplied did not seem to be a phone number.
-Test Pass 
-test start:  "05-11-20 16:28:29.195000"
-test end  :  "05-11-20 16:28:29.302000"
+test start:  "05-22-20 14:59:22.431000"
+test end  :  "05-22-20 14:59:22.533000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:28:29.303000" 
+test start:  "05-22-20 14:59:22.534000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number UI---------
--------------RESULTS  ------------------------------------------- 
+-------------ERROR  ------------------------------------------- 
+Test Failed 
 The string supplied did not seem to be a phone number.
-Test Pass 
-test start:  "05-11-20 16:28:29.303000"
-test end  :  "05-11-20 16:28:29.394000"
+test start:  "05-22-20 14:59:22.534000"
+test end  :  "05-22-20 14:59:22.625000"
 --------------------------------------------------------------- 
  
 
-test start:  "05-11-20 16:28:29.395000" 
+test start:  "05-22-20 14:59:22.626000" 
  Device 1 = ['6JHNW19C02007532']
 Script Dial Number UI---------
--------------RESULTS  ------------------------------------------- 
+-------------ERROR  ------------------------------------------- 
+Test Failed 
 The string supplied did not seem to be a phone number.
-Test Pass 
-test start:  "05-11-20 16:28:29.395000"
-test end  :  "05-11-20 16:28:29.499000"
+test start:  "05-22-20 14:59:22.626000"
+test end  :  "05-22-20 14:59:22.707000"
 --------------------------------------------------------------- 
  
 

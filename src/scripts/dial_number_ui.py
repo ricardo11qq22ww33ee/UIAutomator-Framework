@@ -74,7 +74,6 @@ def action(logger, controller, number, params):
     controller.click_home()
 
 
-
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":

@@ -8,12 +8,31 @@ class Logger:
         self.path = path
         self.verbose = verbose
         self.start = str(datetime.datetime.now(pytz.timezone('US/Pacific')).strftime('"%m-%d-%y %H:%M:%S.%f"'))
-
-        self.begin_log()
+        if filename == "logger_suite.txt":
+            self.begin_suit()
+        else:
+            self.begin_log()
 
     def begin_log(self):
         f = open(self.path + self.filename, "a")
         text = 'test start:  %s ' % self.start
+        f.write(text + "\n")
+        if self.verbose:
+            print str(text)
+        f.close()
+
+    def begin_suit(self):
+        f = open(self.path + self.filename, "a")
+        text = 'suit start:  %s ' % self.start
+        f.write(text + "\n")
+        if self.verbose:
+            print str(text)
+        f.close()
+
+    def end_suit(self):
+        f = open(self.path + self.filename, "a")
+        stop = str(datetime.datetime.now(pytz.timezone('US/Pacific')).strftime('"%m-%d-%y %H:%M:%S.%f"'))
+        text = 'suit end:  %s ' % stop
         f.write(text + "\n")
         if self.verbose:
             print str(text)
